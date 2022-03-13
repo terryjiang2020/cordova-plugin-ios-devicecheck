@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="cordova-plugin-ios-devicecheck" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>IOSDeviceCheck</name>
+    <description>Cordova plugin to use DCDevice class of iOS</description>
+    <license>MIT</license>
+    <keywords>devicecheck</keywords>
+
+	<js-module name="IOSDeviceCheck" src="www/IOSDeviceCheck.js">
+		<clobbers target="IOSDeviceCheck" />
+	</js-module>
+
+    <!-- ios -->
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="IOSDeviceCheck">
+				<param name="ios-package" value="IOSDeviceCheck" />
+			</feature>
+		</config-file>
+		<header-file src="src/ios/IOSDeviceCheck-Bridging-Header.h" />
+		<source-file src="src/ios/IOSDeviceCheck.swift" />
+	</platform>
+
+	<dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+</plugin>
