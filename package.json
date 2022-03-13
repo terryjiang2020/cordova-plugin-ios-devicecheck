@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-nativegeocoder",
+  "name": "cordova-plugin-ios-devicecheck",
   "version": "1.0.0",
   "description": "Cordova plugin to use DCDevice class of iOS",
   "cordova": {
@@ -13,12 +13,7 @@
     "url": "https://github.com/dderick/cordova-plugin-ios-devicecheck.git"
   },
   "keywords": [
-    "ecosystem:cordova",
-    "cordova-android",
-    "cordova-ios",
-    "geocoder",
-    "geocoding",
-    "location"
+    "devicecheck"
   ],
   "author": "Derick Wong",
   "license": "MIT",
